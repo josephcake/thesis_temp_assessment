@@ -1,0 +1,247 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: auto;
+  background: url(temp.png) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  overflow-y: auto;
+}
+body div{
+  margin: auto;
+}
+
+/* =========================================================
+============================Nav=============================
+========================================================= */
+
+#nav-bar-container{
+  height: 10%;
+  width: 90%;
+  display: flex;
+}
+#nav-tabs-container{
+  width: 40%;
+  display: flex;
+  margin: auto;
+  animation: Fade-in 3s;
+
+}
+.nav-tabs a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.nav-tabs:hover a{
+  color: dodgerblue;
+}
+#logo{
+  margin: auto 0;
+  cursor: pointer;
+}
+#menu{
+  margin: auto 0;
+  position: fixed;
+  right: 40px;
+  top: -10px;
+}
+#menu-logo{
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+#menu-logo:hover{
+  color: dodgerblue;
+}
+#vertical-nav-tabs-container{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: auto;
+  width: 100%;
+}
+.vert-nav-tabs{
+  text-align: center;
+  border-bottom: white solid 1px;
+  width: 50%;
+}
+.vert-nav-tabs a{
+  letter-spacing: 0.8rem;
+  width: 80%;
+  margin: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+
+/* =========================================================
+==============================Main==========================
+========================================================= */
+
+#main{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12% 0;
+}
+
+#header-container{
+  width: 550px;
+  padding: auto 20px;
+  display: block;
+}
+
+#main-header{
+  font-size: 5rem;
+}
+#sub-header{
+  font-size: 1rem;
+}
+#form-container{
+  padding: 0% 20px;
+  width: 550px;
+}
+#main-form{
+  margin: 5% auto;
+  width: 100%;
+}
+#form-title{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+#agreement{
+  text-align: center;
+}
+#agreement p:nth-of-type(1){
+  color: gray;
+}
+#agreement p:nth-of-type(2){
+  cursor: pointer;
+}
+
+.form-input{
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  display: block;
+  height: 60px;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  font-size: 1.4rem;
+  text-indent: 1rem;
+  color: white;
+}
+.form-input:nth-of-type(1){
+  border-radius: 7px 7px 0px 0px;
+}
+
+input[type='button']{
+  background-color: dodgerblue;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 0px 0px 7px 7px;
+  cursor: pointer;
+}
+
+input::placeholder{
+  font-size: 1.4rem;
+  text-indent: 1rem;
+  color: floralwhite;
+}
+/* =========================================================
+=============================Footer=========================
+========================================================= */
+
+#footer{
+  margin-top: -5%;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 90%;
+  display: flex;
+  text-transform: uppercase;
+  clear: both;
+}
+#copyrights{
+  width: 50%;
+  margin: auto;
+}
+#footer-tabs{
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+.footer-tabs a{
+  color: white;
+  text-decoration: none;
+}
+.footer-tabs:hover a{
+  text-decoration: underline;
+}
+
+
+
+
+/* =========================================================
+============================Media==========================
+========================================================= */
+
+@media screen and (max-width: 1025px) {
+  #nav-bar-container{
+    display: block;
+    /* margin: auto; */
+    /* width: 100%; */
+  }
+  #logo{
+    text-align: center;
+  }
+  #nav-tabs-container{
+    display: none;
+  }
+  #menu{
+    position: fixed;
+    right: 40px;
+    top: -10px;
+  }
+  #main{
+    padding: auto;
+    width: 100%;
+  }
+  /* #main div{
+    margin: auto;
+  } */
+  #main-header{
+    font-size: 4rem;
+  }
+  .footer-tabs a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  #form-title{
+    margin-top: 5%;
+    font-size: 3rem;
+
+  }
+  #footer{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-input{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: block;
+    height: 100px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid gray;
+  }
+}
